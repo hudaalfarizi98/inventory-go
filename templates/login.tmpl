@@ -1,8 +1,10 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html>
 
 <head>
     <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7/dist/css/bootstrap.css">
+    <script src="jquery.js"></script>
+    <script src="model.js"></script>
     <title>Login Page</title>
 </head>
 <style type="text/css">
@@ -19,7 +21,8 @@
 <body style="background-image: url('login.jpg');">
     <div class="center col-md-5">
         <legend style="font-size: 30px; color: white;">Inventory v.1.0</legend>
-        <form method="POST">
+        <div id="result"></div>
+        <form id="form-login">
             <div class="form-group row">
                 <label for="username" style="color: white;">Username:</label>
                 <input type="text" class="form-control" name="username">
@@ -31,7 +34,7 @@
             <div class="checkbox">
                 <label><input type="checkbox"> Remember me</label>
             </div>
-            <button type="submit" class="btn btn-default">Login</button>
+            <button id="ajax_id" type="button" class="btn btn-default">Login</button>
         </form>
         Belum punya Akun? Daftar <a href="/register">disini<a>
     </div>

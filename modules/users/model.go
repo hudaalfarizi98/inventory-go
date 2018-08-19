@@ -14,7 +14,7 @@ type LoginRequest struct {
 }
 
 type LoginResponse struct {
-	Result string `json:"res"`
+	Result string `json:"result"`
 }
 type RegisterRequest struct {
 	Username  string `form:"username"`
@@ -23,7 +23,7 @@ type RegisterRequest struct {
 	LastName  string `form:"lastname"`
 }
 type RegisterResponse struct {
-	Result string `json:"res"`
+	Result string `json:"result"`
 }
 
 func dbConnection() *sql.DB {
